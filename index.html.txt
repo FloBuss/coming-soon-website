@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ff7700; /* Full orange */
+            font-size: 3rem;
+            margin-top: 20vh;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Contact Form Styling */
+        .contact-form {
+            background-color: black;
+            border: 2px solid #ff7700; /* Orange border */
+            padding: 20px;
+            width: 40%;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff7700; /* Orange border */
+            background-color: black; /* Black background */
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #ff7700; /* Orange placeholder text */
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff7700; /* Full orange */
+            color: black; /* Black text */
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e06600; /* Darker orange on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Coming Soon</h1>
+    <p>We are working on something amazing. Stay tuned!</p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>
