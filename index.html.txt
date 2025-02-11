@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wir kommen bald</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #FFD700;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .contact-form {
+            margin-top: 30px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #FFD700;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wir kommen bald</h1>
+    <p>Unsere Website ist bald verfügbar. Bleiben Sie dran!</p>
+    <div class="contact-form">
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <input type="text" name="name" placeholder="Ihr Name" required>
+            <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+            <textarea name="message" placeholder="Ihre Nachricht" rows="4" required></textarea>
+            <input type="submit" value="Nachricht senden">
+        </form>
+    </div>
+</body>
+</html>
